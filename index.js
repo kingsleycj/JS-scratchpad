@@ -12,7 +12,3 @@ $('button').on('click', function(){
     $('a').attr('href', 'https://www.github.com');
     console.log($('a').attr('href'));
 });
-
-
-
-
