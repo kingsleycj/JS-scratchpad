@@ -14,6 +14,3 @@ $('button').on('click', function(){
 });
 
 
-
-
-
