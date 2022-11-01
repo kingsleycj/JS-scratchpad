@@ -13,4 +13,3 @@ $('button').on('click', function(){
     console.log($('a').attr('href'));
 });
 
-
