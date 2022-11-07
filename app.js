@@ -17,4 +17,4 @@ students.forEach(function(student){
 
 $('p').parent('#two').css('background-color', 'lightblue').css('color', 'white')
 
-
+$('button[disabled]').next().text('This Button is disabled!')
