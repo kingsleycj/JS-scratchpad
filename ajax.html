@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX with Javascript</title>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function (){
+            if (xhr.readyState === 4){
+                document.getElementById('ajax').innerHTML = xhr.responseText;
+            }
+        };
+        xhr.open('GET', 'sidebar.html');
+        xhr.send();
+    </script>
+</head>
+<body>
+    <div class="grid-container centered">
+        <div class="grid-100">
+            <div class="contained">
+                <div class="grid-100">
+                    <div class="heading">
+                        <h1>Bring on the AJAX</h1>
+                    </div>
+                    <ul id="ajax">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
