@@ -15,6 +15,6 @@ students.forEach(function(student){
     console.log(student.name);
 });
 
-$('p').parent('#two').css('background-color', 'yellow')
+$('p').parent('#two').css('background-color', 'lightblue').css('color', 'white')
 
 
