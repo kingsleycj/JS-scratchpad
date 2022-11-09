@@ -3,7 +3,6 @@ $('li').on('click', function() {
     $(this).text('Clicked!');
 });
 
-
 console.log($('a').attr('href'));
 
 $('a').not('[href *= "my-domain.com"]').attr("target", "_blank");
