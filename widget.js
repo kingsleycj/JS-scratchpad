@@ -3,8 +3,8 @@ xhr.onreadystatechange = function () {
   if (xhr.readyState === 4) {
     var employees = JSON.parse(xhr.responseText);
     var statusHTML = '<ul class = "bulleted">';
-    for (let i =0; i < employees.length; i++) {
-        if (employees[i].in-office === true) {
+    for (var i =0; i < employees.length; i++) {
+        if (employees[i].inoffice === true) {
           statusHTML += '<li class = "in">';
         } else {
           statusHTML += '<li class ="out">';
@@ -12,6 +12,8 @@ xhr.onreadystatechange = function () {
         statusHTML += employees[i].name;
         statusHTML += '</li>';
       }
+      statusHTML += '</ul>';
+      document.getElementById("employeeList").innerHTML = statusHTML;
     }
   };
 xhr.open("GET", "data.json");
