@@ -1,9 +1,9 @@
-var xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function () {
   if (xhr.readyState === 4) {
-    var employees = JSON.parse(xhr.responseText);
-    var statusHTML = '<ul class = "bulleted">';
-    for (var i =0; i < employees.length; i++) {
+      let employees = JSON.parse(xhr.responseText);
+      let statusHTML = '<ul class = "bulleted">';
+      for (let i =0; i < employees.length; i++) {
         if (employees[i].inoffice === true) {
           statusHTML += '<li class = "in">';
         } else {
