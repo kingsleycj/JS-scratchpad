@@ -1,17 +1,29 @@
-<div class="employeeList">
-    <ul class="bulleted">
-        <li class="out">Amit</li>
-        <li class="out">Amiee</li>
-        <li class="in">Andrew</li>
-        <li class="in">Ben</li>
-        <li class="in">Elizabeth</li>
-        <li class="out">Guil</li>
-        <li class="in">Hampton</li>
-        <li class="in">Jason</li>
-        <li class="in">Kingsley</li>
-        <li class="out">Kenneth</li>
-        <li class="in">Kareem</li>
-        <li class="in">Shawna</li>
-        <li class="out">Zac</li>
-    </ul>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                document.getElementById('ajax').innerHTML = xhr.responseText;
+            }
+        };
+        xhr.open('GET', './sidebar.html');
+        function sendAJAX() {
+            xhr.send();
+                document.getElementById('load').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="grid-container centered">
+        <div class="grid-100">
+
+        </div>
+    </div>
+</body>
+</html>

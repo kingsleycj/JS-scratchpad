@@ -30,7 +30,7 @@ roomCheck.onreadystatechange = function () {
       } else {
         statusHTM += '<li class ="full">';
       }
-      statusHTM += check[i].name;
+      statusHTM += check[i].roomNumber;
       statusHTM += "</li>";
     }
     statusHTM += "</ul>";
