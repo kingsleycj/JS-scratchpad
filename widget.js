@@ -22,7 +22,7 @@ xhr.send();
 var roomCheck = new XMLHttpRequest();
 roomCheck.onreadystatechange = function () {
   if (roomCheck.readyState === 4) {
-    let check = JSON.parse(xhr.responseText);
+    let check = JSON.parse(roomCheck.responseText);
     let statusHTM = '<ul class = "rooms">';
     for (let i = 0; i < check.length; i++) {
       if (check[i].status === true) {
@@ -37,5 +37,5 @@ roomCheck.onreadystatechange = function () {
     document.getElementById("checkRooms").innerHTML = statusHTM;
   }
 };
-xhr.open("GET", "./rooms.json");
-xhr.send();
+roomCheck.open("GET", "./rooms.json");
+roomCheck.send();
