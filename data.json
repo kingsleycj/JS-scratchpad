@@ -1,0 +1,14 @@
+[
+    {
+        "name" : "Aimee",
+        "in-office" : false 
+    },
+    {
+        "name": "Jack",
+        "in-office": true
+    },
+    {
+        "name": "Kingsley",
+        "in-office": true
+    }
+]
