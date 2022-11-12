@@ -5,24 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./jquery-3.6.1.js"></script>
     <script>
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4) {
-                document.getElementById('ajax').innerHTML = xhr.responseText;
-            }
-        };
-        xhr.open('GET', './sidebar.html');
+        // var xhr = new XMLHttpRequest();
+        // xhr.onreadystatechange = function () {
+        //     if (xhr.readyState === 4) {
+        //         document.getElementById('ajax').innerHTML = xhr.responseText;
+        //     }
+        // };
+        // xhr.open('GET', './sidebar.html');
         function sendAJAX() {
-            xhr.send();
-                document.getElementById('load').style.display = 'none';
+            $('#ajax').load('./sidebar.html');
         }
     </script>
 </head>
 <body>
     <div class="grid-container centered">
         <div class="grid-100">
-
+            <div class="contained">
+                <div class="grid-100">
+                    <div class="heading">
+                        <h1>Bring on the AJAX</h1>
+                    </div>
+                    <button class="button" onclick="sendAJAX" id="load">Bring It!</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
