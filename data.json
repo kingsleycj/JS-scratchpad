@@ -1,14 +1,54 @@
 [
     {
-        "name" : "Aimee",
-        "in-office" : false 
+        "name": "Aimee",
+        "in-office": false
     },
     {
-        "name": "Jack",
+        "name": "Amit",
+        "in-office": true
+    },
+    {
+        "name": "Andrew",
+        "in-office": true
+    },
+    {
+        "name": "Ben",
+        "in-office": true
+    },
+    {
+        "name": "Elizabeth",
+        "in-office": true
+    },
+    {
+        "name": "Guil",
+        "in-office": true
+    },
+    {
+        "name": "Hampton",
+        "in-office": true
+    },
+    {
+        "name": "Jason",
         "in-office": true
     },
     {
         "name": "Kingsley",
+        "in-office": true
+    },
+    {
+        "name": "Kenneth",
+        "in-office": true
+    },
+    {
+        "name": "Kareem",
+        "in-office": true
+    },
+    {
+        "name": "Shawna",
+        "in-office": true
+    },
+    {
+        "name": "Zac",
         "in-office": true
     }
 ]
