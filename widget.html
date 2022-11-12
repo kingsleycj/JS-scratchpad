@@ -7,15 +7,8 @@
     <title>Document</title>
     <script src="./jquery-3.6.1.js"></script>
     <script>
-        // var xhr = new XMLHttpRequest();
-        // xhr.onreadystatechange = function () {
-        //     if (xhr.readyState === 4) {
-        //         document.getElementById('ajax').innerHTML = xhr.responseText;
-        //     }
-        // };
-        // xhr.open('GET', './sidebar.html');
         function sendAJAX() {
-            $('#ajax').load('./sidebar.html');
+            $('#ajax').load('sidebar.html');
         }
     </script>
 </head>
@@ -27,7 +20,10 @@
                     <div class="heading">
                         <h1>Bring on the AJAX</h1>
                     </div>
-                    <button class="button" onclick="sendAJAX" id="load">Bring It!</button>
+                    <button class="button" onclick="sendAJAX()" id="load">Bring It!</button>
+                    <div id="ajax">
+
+                    </div>
                 </div>
             </div>
         </div>
