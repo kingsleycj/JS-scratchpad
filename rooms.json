@@ -1,0 +1,26 @@
+[
+    {
+        "roomNumber": 101,
+        "status": false
+    },
+    {
+        "roomNumber": 102,
+        "status": true
+    },
+    {
+        "roomNumber": 103,
+        "status": false
+    },
+    {
+        "roomNumber": 104,
+        "status": false
+    },
+    {
+        "roomNumber": 105,
+        "status": true
+    },
+    {
+        "roomNumber": 106,
+        "status": true
+    }
+]
