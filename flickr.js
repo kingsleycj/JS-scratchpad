@@ -25,6 +25,9 @@ $(document).ready(function () {
             }); // end each
             photoHTML += "</ul>";
             $('#photos').html(photoHTML);
+            $searchField.prop("disabled", false);
+            $submitButton.attr("disabled", true).val("Submit Query");
+
         }
         $.getJSON(flickrAPI,flickrOptions, displayPhotos);
     });
