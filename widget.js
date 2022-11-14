@@ -39,3 +39,4 @@ roomCheck.onreadystatechange = function () {
 };
 roomCheck.open("GET", "./rooms.json");
 roomCheck.send();
+
