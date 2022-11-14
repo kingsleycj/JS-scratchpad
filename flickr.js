@@ -4,13 +4,13 @@ $(document).ready(function () {
         $(this).addClass("selected");
         var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
         var animals = $(this).text();
-        var flickerOptions = {
+        var flickrOptions = {
             tags: animals,
             format: "json"
         };
         function displayPhotos (data) {
-            
+
         }
-        $.getJSON(flickrAPI,flickerOptions, displayPhotos);
+        $.getJSON(flickrAPI,flickrOptions, displayPhotos);
     });
 }); //end ready
