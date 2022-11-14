@@ -16,7 +16,7 @@ $(document).ready(function () {
                 photoHTML += '<img src = "' + photo.media.m + '"></a></li>';
             });
             photoHTML += "</ul>";
-            $(#photo).html(photoHTML);
+            $('#photos').html(photoHTML);
         }
         $.getJSON(flickrAPI,flickrOptions, displayPhotos);
     });
