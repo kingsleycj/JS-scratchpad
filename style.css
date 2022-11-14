@@ -42,5 +42,5 @@ button{
 
 #photos {
     display: inline;
-    list-style-type: none;
+    justify-content: space-around;
 }
