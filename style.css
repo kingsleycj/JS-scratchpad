@@ -9,3 +9,33 @@
     display: grid;
     grid-template-columns: 15rem;
 } */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contained{
+    border: 2px solid rgb(243, 239, 239);
+    margin: 30px 19px 35px 30px;
+    text-align: center;
+    
+}
+.heading p{
+    color: grey;
+}
+
+.filter-select{
+    list-style-type: none;
+    display: inline-flex;
+    /* justify-content: space-between; */
+    margin-right: 0px;
+}
+button{
+    font-family: 'Courier New', Courier, monospace;
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border: 0px solid white;
+}
