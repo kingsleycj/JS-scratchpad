@@ -11,9 +11,11 @@
 } */
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Courier;
 }
-
+ul{
+    list-style-type: none;
+}
 .contained{
     border: 2px solid rgb(243, 239, 239);
     margin: 30px 19px 35px 30px;
@@ -44,4 +46,12 @@ button{
 #photos {
     display: flex;
     justify-content: space-around;
+}
+
+#search {
+    border-radius: 20px;
+}
+
+form {
+    margin-bottom: 50px;
 }

@@ -7,7 +7,7 @@ $(document).ready(function () {
 
         //the AJAX part
         var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-        var animals = $(this).text();
+        var animals = $searchField.val();
         var flickrOptions = {
             tags: animals,
             format: "json"
