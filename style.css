@@ -44,7 +44,7 @@ button{
 ul{
     display: flex;
     /* grid-template-columns: 1 1fr; */
-    
+    flex-direction: 3rem;
 }
 #photos {
     display: flex;
