@@ -9,7 +9,10 @@ $(document).ready(function () {
             format: "json"
         };
         function displayPhotos (data) {
-
+            var photoHTML = "<ul>";
+            $.each(array, function(i, item) {
+                
+            });
         }
         $.getJSON(flickrAPI,flickrOptions, displayPhotos);
     });
