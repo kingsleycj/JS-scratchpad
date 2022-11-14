@@ -39,3 +39,8 @@ button{
     padding-right: 10px;
     border: 0px solid white;
 }
+
+#photos {
+    display: grid;
+    list-style-type: none;
+}
