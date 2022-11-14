@@ -41,6 +41,6 @@ button{
 }
 
 #photos {
-    display: grid;
+    display: inline;
     list-style-type: none;
 }
