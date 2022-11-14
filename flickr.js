@@ -1,7 +1,11 @@
 $(document).ready(function () {
-    $('button').click(function (){
-        $("button").removeClass("selected");
-        $(this).addClass("selected");
+    $('form').submit(function (evt){
+        evt.preventDefault();
+        var $searchField = $('#search');
+        // $("button").removeClass("selected");
+        // $(this).addClass("selected");
+
+        //the AJAX part
         var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
         var animals = $(this).text();
         var flickrOptions = {
@@ -14,7 +18,7 @@ $(document).ready(function () {
                 photoHTML += '<li class = "grid-25 tablet-grid-50">';
                 photoHTML += '<a href ="' + photo.link + '" class = "image">';
                 photoHTML += '<img src = "' + photo.media.m + '"></a></li>';
-            });
+            }); // end each
             photoHTML += "</ul>";
             $('#photos').html(photoHTML);
         }
