@@ -3,12 +3,10 @@ $(document).ready(function () {
         evt.preventDefault();
         var $searchField = $('#search');
         var $submitButton = $('#submit');
-
         $searchField.prop("disabled", true);
         $submitButton.attr("disabled", true).val("searching...");
         // $("button").removeClass("selected");
         // $(this).addClass("selected");
-
         //the AJAX part
         var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
         var animals = $searchField.val();
