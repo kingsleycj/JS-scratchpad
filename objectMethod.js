@@ -6,7 +6,8 @@ const portland = {
         console.log("There are " + this.bridges + " bridges in portland!")
     },
     logTeams: function () {
-        console.log(this)
+        console.log(this.soccerTeams)
     }
 };
 portland.logNumberOfBridges();
+portland.logTeams();
