@@ -1,13 +1,15 @@
-const portland = {
+let portland = {
     bridges: 12,
     airport: 1,
     soccerTeams: 1,
     logNumberOfBridges: function () {
         console.log("There are " + this.bridges + " bridges in portland!")
-    },
-    logTeams: function () {
-        console.log(this.soccerTeams)
     }
 };
-portland.logNumberOfBridges();
-portland.logTeams();
+
+function logTeams () {
+    console.log(this)
+}
+portland.foo = logTeams;
+portland.foo();
+logTeams();
