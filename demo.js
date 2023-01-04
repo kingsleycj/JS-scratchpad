@@ -10,3 +10,12 @@
 
 
 
+class Rectangle {
+    constructor (_width, _height, _color ){
+        console.log('the rectangle is being created')
+        this.height = _width;
+        this.width = _height;
+        this.color = _color;
+    }
+}
+    const rectangle = new Rectangle(3, 5, "blue");
