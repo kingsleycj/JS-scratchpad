@@ -19,6 +19,7 @@ xhr.onreadystatechange = function () {
 xhr.open("GET", "./data.json");
 xhr.send();
 
+
 var roomCheck = new XMLHttpRequest();
 roomCheck.onreadystatechange = function () {
   if (roomCheck.readyState === 4) {
