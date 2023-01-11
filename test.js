@@ -7,3 +7,5 @@
 // a test for a pattern that starts with a digit
 // let res3 = /\d./.test('abcdef')
 // console.log(res3);
+const set1 = /\d{3}/.test("323");
+console.log(set1)
