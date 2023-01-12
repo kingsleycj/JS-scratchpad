@@ -20,5 +20,5 @@ const set2 = /\S+@\S+\.?\S+$/.test("king@gmail.com") // looks for a string liter
 // A STANDARD EMAIL REGEX VALIDATION
 
 const emailValidation =
-  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test("primekings.kc@gmail.com") ;
-  console.log(emailValidation)
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test("primekings.kc@gmail.com") ;
+    console.log(emailValidation)
