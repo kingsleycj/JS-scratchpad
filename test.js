@@ -17,12 +17,20 @@ const set1 = /\d[5, 8]/.test("1234");    // looks out for a pattern that has a m
 const set2 = /^\d\S+@\S+\.?\S+$/.test("1king@gmail.com") // looks for a string literal, then "@", then another string literal, then a dot "."(optional), then another string literal
 console.log(set2)
 
-// A STANDARD EMAIL REGEX VALIDATION
 
+/**
+ *?     \s - represents whitespaces
+ *!     \S - represents none whitespaces
+ *?     ^ - represents "start a pattern with"
+ *      $ - represents "end a pattern with"
+ *  */ 
+
+
+// A STANDARD EMAIL REGEX VALIDATION
 const emailValidation =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.exec("primekings.kc@gmail.com") ;
     console.log(emailValidation)
 
 // MATCHES AND GROUPS
-const match = /\d+/.exec("one two 100")
+const match = /^\S\s\d+$/.test("a 100")
 console.log(match)
