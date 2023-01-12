@@ -19,3 +19,5 @@ class Rectangle {
     }
 }
     const rectangle = new Rectangle(3, 5, "blue");
+
+    

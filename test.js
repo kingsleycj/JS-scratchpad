@@ -8,12 +8,17 @@
 // let res3 = /\d./.test('abcdef')
 // console.log(res3);
 
-// quantifiers +,  *,  .
+// quantifiers +,  *,  ?
 const set1 = /\d[5, 8]/.test("1234");    // looks out for a pattern that has a minimum of 5 and maximum of 8 digits in the quoted braces
 // console.log(set1)
 
 // REPEATING PATTERNS
 // + quantifiers
-const set2 = /hello[0-9]+/.test("hello1") // looks for "hello", "0-9" and "+" represents a repetitive pattern, meaning these patterns can occur more than once
-console.log(set2)
+const set2 = /\S+@\S+\.?\S+$/.test("king@gmail.com") // looks for a string literal, then "@", then another string literal, then a dot "."(optional), then another string literal
+// console.log(set2)
 
+// A STANDARD EMAIL REGEX VALIDATION
+
+const emailValidation =
+  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test("primekings.kc@gmail.com") ;
+  console.log(emailValidation)
