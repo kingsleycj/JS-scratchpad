@@ -19,11 +19,12 @@ console.log(set2)
 
 
 /**
- *?     \s - represents whitespaces
- *!     \S - represents none whitespaces
- *?     ^ - represents "start a pattern with"
- *      $ - represents "end a pattern with"
- *  */ 
+ * ?             \s - represents "whitespaces"
+ * !             \S - represents "none whitespaces"
+ * ?             ^ - represents "start a pattern with"
+ *  *             $ - represents "end a pattern with"
+ * TODO     .   - represents "any other value"
+ * */ 
 
 
 // A STANDARD EMAIL REGEX VALIDATION
@@ -32,5 +33,5 @@ const emailValidation =
     console.log(emailValidation)
 
 // MATCHES AND GROUPS
-const match = /^\S\s\d+$/.test("a 100")
+const match = /^\S+.\d+$/.test("a 100")
 console.log(match)
