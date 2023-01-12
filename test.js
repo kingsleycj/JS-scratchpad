@@ -14,7 +14,7 @@ const set1 = /\d[5, 8]/.test("1234");    // looks out for a pattern that has a m
 
 // REPEATING PATTERNS
 // + quantifiers
-const set2 = /\S+@\S+\.?\S+$/.test("king@gmail.com") // looks for a string literal, then "@", then another string literal, then a dot "."(optional), then another string literal
+const set2 = /^\d\S+@\S+\.?\S+$/.test("king@gmail.com") // looks for a string literal, then "@", then another string literal, then a dot "."(optional), then another string literal
 // console.log(set2)
 
 // A STANDARD EMAIL REGEX VALIDATION
